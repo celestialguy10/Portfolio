@@ -3,31 +3,31 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Digital Marketing landing page",
+    description: "A beautiful landing page for a digital marketing company",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "TailwindCSS", "Framer-motion"],
+    demoUrl: "https://www.garvishmarketing.com/",
+    githubUrl: "https://github.com/celestialguy10/Garvish-Marketing-Website",
   },
   {
     id: 2,
-    title: "Orbit Analytics Dashboard",
+    title: "Music critic Website",
     description:
-      "Interactive analytics dashboard with data visualization and filtering capabilities.",
+      "A website to rate and review music just like IMDb but for music albums",
     image: "/projects/project2.png",
-    tags: ["TypeScript", "D3.js", "Next.js"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["React", "Node.js", "MongoDb"],
+    demoUrl: "",
+    githubUrl: "https://github.com/celestialguy10/Beat-critic",
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Real time Chat app",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Full-featured real-time chat app which has individual as well as group conversation features",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
+    tags: ["React", "Node.js", "Socket-io"],
+    demoUrl: "",
     githubUrl: "#",
   },
 ];
@@ -75,13 +75,15 @@ export const ProjectsSection = () => {
                 </p>
                 <div className="flex justify-between items-center">
                   <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
+                    {project.demoUrl && (
+                      <a
+                        href={project.demoUrl}
+                        target="_blank"
+                        className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                      >
+                        <ExternalLink size={20} />
+                      </a>
+                    )}
                     <a
                       href={project.githubUrl}
                       target="_blank"
@@ -100,7 +102,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/machadop1407"
+            href="https://github.com/celestialguy10"
           >
             Check My Github <ArrowRight size={16} />
           </a>
