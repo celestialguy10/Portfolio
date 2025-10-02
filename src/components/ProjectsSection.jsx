@@ -3,15 +3,6 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Digital Marketing landing page",
-    description: "A beautiful landing page for a digital marketing company",
-    image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Framer-motion"],
-    demoUrl: "https://www.garvishmarketing.com/",
-    githubUrl: "https://github.com/celestialguy10/Garvish-Marketing-Website",
-  },
-  {
-    id: 2,
     title: "Music critic Website",
     description:
       "A website to rate and review music just like IMDb but for music albums",
@@ -21,7 +12,7 @@ const projects = [
     githubUrl: "https://github.com/celestialguy10/Beat-critic",
   },
   {
-    id: 3,
+    id: 2,
     title: "Real time Chat app",
     description:
       "Full-featured real-time chat app which has individual as well as group conversation features",
@@ -29,6 +20,16 @@ const projects = [
     tags: ["React", "Node.js", "Socket-io"],
     demoUrl: "",
     githubUrl: "#",
+  },
+  {
+    id: 3,
+    title: "Digital Marketing Website",
+    description:
+      "A minimalist website for a digital marketing company to attract customers",
+    image: "/projects/project1.png",
+    tags: ["React", "TailwindCSS", "Framer-motion"],
+    demoUrl: "https://www.garvishmarketing.com/",
+    githubUrl: "https://github.com/celestialguy10/Garvish-Marketing-Website",
   },
 ];
 
